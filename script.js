@@ -1,4 +1,5 @@
 / Helper functions
+
 function shuffle(array) {
     let currentIndex = array.length;
   
@@ -23,10 +24,19 @@ var cards =[
     {value: '3', image: './images/club_3.svg' },
     {value: '2', Image: './images/club_2.svg' }, 
     {value: '3', image: './images/club_3.svg' },
-    {value: '4', Image: './images/club_2.svg' }, 
-    {value: '1', image: './images/club_3.svg' },
-    {value: '1', Image: './images/club_2.svg' }, 
-    {value: '4', image: './images/club_3.svg' },
+    {value: '4', Image: './images/club_4.svg' }, 
+    {value: '1', image: './images/club_1.svg' },
+    {value: '4', Image: './images/club_4.svg' }, 
+    {value: '1', image: './images/club_1.svg' },
 ]
-var cardEls= document.querySelectorAll('.cards')
-shuffle(card)
+var cardEls = document.querySelectorAll('.cards')
+
+shuffle(cards)
+
+cardEls.forEach(function (el, index)) {
+        el.addEventListener('click', function() {
+        var clickedCard = cards[index]
+        console.log(index, el)
+        }
+    }
+
