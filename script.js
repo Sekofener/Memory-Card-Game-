@@ -1,6 +1,7 @@
 
-
+// Helper function
 function shuffle(array) {
+}
     let currentIndex = array.length;
   
     // While there remain elements to shuffle...
@@ -14,20 +15,24 @@ function shuffle(array) {
       [array[currentIndex], array[randomIndex]] = [
         array[randomIndex], array[currentIndex]];
     }
-  }
+  
 
 
 
 //Our codes
 var cards =[
-    {value: '2', Image: './images/club_2.svg' }, 
-    {value: '3', image: './images/club_3.svg' },
-    {value: '2', Image: './images/club_2.svg' }, 
-    {value: '3', image: './images/club_3.svg' },
-    {value: '4', Image: './images/club_4.svg' }, 
-    {value: '1', image: './images/club_1.svg' },
-    {value: '4', Image: './images/club_4.svg' }, 
-    {value: '1', image: './images/club_1.svg' },
+    {value: '2', Image: './images/Images/svg_playing_cards/fronts/clubs_2.svg' }, 
+    {value: '3', Image: './images/Images/svg_playing_cards/fronts/clubs_2.svg' }, 
+    {value: '2', Image: './images/Images/svg_playing_cards/fronts/clubs_2.svg' }, 
+    {value: '3', Image: './images/Images/svg_playing_cards/fronts/clubs_2.svg' }, 
+    {value: '1', Image: './images/Images/svg_playing_cards/fronts/clubs_2.svg' }, 
+    {value: '4', Image: './images/Images/svg_playing_cards/fronts/clubs_2.svg' }, 
+    {value: '4', Image: './images/Images/svg_playing_cards/fronts/clubs_2.svg' }, 
+    {value: '1', Image: './images/Images/svg_playing_cards/fronts/clubs_2.svg' }, 
+
+
+
+
 ]
 var cardEls = document.querySelectorAll('.cards')
 
