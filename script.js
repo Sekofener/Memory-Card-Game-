@@ -1,4 +1,4 @@
-/ Helper functions
+
 
 function shuffle(array) {
     let currentIndex = array.length;
@@ -33,10 +33,10 @@ var cardEls = document.querySelectorAll('.cards')
 
 shuffle(cards)
 
-cardEls.forEach(function (el, index)) {
-        el.addEventListener('click', function() {
+cardEls.forEach(function (el, index) {
+        el.addEventListener('click', function()  {
         var clickedCard = cards[index]
-        console.log(index, el)
-        }
-    }
+        // console.log(index, el)
+        })
+      })
 
